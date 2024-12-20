@@ -21,7 +21,7 @@ public class RolesEntity
     public DateTime CreatedDate { get; set; }
 
     [Column("UpdatedUserId")]
-    public string UpdatedUserId { get; set; }
+    public string? UpdatedUserId { get; set; }
 
     [Column("UpdatedDate")]
     public DateTime? UpdatedDate { get; set; }
