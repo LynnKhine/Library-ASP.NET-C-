@@ -8,17 +8,17 @@ namespace LibrarySystem.Data;
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     // Define your tables here as DbSet<T>
-    public DbSet<AuthorsEntity> AuthorsDbSet { get; set; }
+    public DbSet<AuthorEntity> AuthorDbSet { get; set; }
 
-    public DbSet<BooksEntity> BooksDbSet { get; set; }
+    public DbSet<BookEntity> BookDbSet { get; set; }
 
-    public DbSet<BorrowHistoriesEntity> BorrowHistoriesDbSet { get; set; }
+    public DbSet<BorrowHistoryEntity> BorrowHistoryDbSet { get; set; }
 
-    public DbSet<CategoriesEntity> CategoriesDbSet { get; set; }
+    public DbSet<CategoryEntity> CategoryDbSet { get; set; }
 
-    public DbSet<CustomersEntity> CustomersDbSet { get; set; }
+    public DbSet<CustomerEntity> CustomerDbSet { get; set; }
 
-    public DbSet<RolesEntity> RolesDbSet { get; set; }
+    public DbSet<RoleEntity> RoleDbSet { get; set; }
 
     public DbSet<StaffEntity> StaffDbSet { get; set; }
 

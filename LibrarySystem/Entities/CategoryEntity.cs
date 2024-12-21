@@ -3,7 +3,7 @@
 namespace LibrarySystem.Entities;
 
 [Table("Categories")]
-public class CategoriesEntity
+public class CategoryEntity
 {
     [Column("Id")]
     public string Id { get; set; }

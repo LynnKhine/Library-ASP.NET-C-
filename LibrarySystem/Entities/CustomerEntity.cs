@@ -2,26 +2,26 @@
 
 namespace LibrarySystem.Entities;
 
-[Table("BorrowHistories")]
-public class BorrowHistoriesEntity
+[Table("Customers")]
+public class CustomerEntity
 {
     [Column("Id")]
     public string Id { get; set; }
 
-    [Column("CustomerId")]
-    public string CustomerId { get; set; }
+    [Column("Name")]
+    public string Name { get; set; }
 
-    [Column("BookId")]
-    public string BookId { get; set; }
+    [Column("PhoneNumber")]
+    public int PhoneNumber { get; set; }
 
-    [Column("BorrowDate")]
-    public DateTime BorrowDate { get; set; }
+    [Column("Email")]
+    public string Email { get; set; }
 
-    [Column("DueDate")]
-    public DateTime DueDate { get; set; }
+    [Column("Address")]
+    public string Address { get; set; }
 
-    [Column("ReturnDate")]
-    public DateTime ReturnDate { get; set; }
+    [Column("IsBorrowed")]
+    public bool IsBorrowed { get; set; }
 
     [Column("CreatedUserId")]
     public string CreatedUserId { get; set; }
@@ -34,8 +34,5 @@ public class BorrowHistoriesEntity
 
     [Column("UpdatedDate")]
     public DateTime? UpdatedDate { get; set; }
-
-
-
 }
 

@@ -2,20 +2,26 @@
 
 namespace LibrarySystem.Entities;
 
-[Table("Authors")]
-public class AuthorsEntity
+[Table("BorrowHistories")]
+public class BorrowHistoryEntity
 {
     [Column("Id")]
     public string Id { get; set; }
 
-    [Column("Name")]
-    public string Name { get; set; }
+    [Column("CustomerId")]
+    public string CustomerId { get; set; }
 
-    [Column("RealName")]
-    public string RealName { get; set; }
+    [Column("BookId")]
+    public string BookId { get; set; }
 
-    [Column("Bio")]
-    public string Bio { get; set; }
+    [Column("BorrowDate")]
+    public DateTime BorrowDate { get; set; }
+
+    [Column("DueDate")]
+    public DateTime DueDate { get; set; }
+
+    [Column("ReturnDate")]
+    public DateTime ReturnDate { get; set; }
 
     [Column("CreatedUserId")]
     public string CreatedUserId { get; set; }

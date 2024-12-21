@@ -2,8 +2,8 @@
 
 namespace LibrarySystem.Entities;
 
-[Table("Customers")]
-public class CustomersEntity
+[Table("Authors")]
+public class AuthorEntity
 {
     [Column("Id")]
     public string Id { get; set; }
@@ -11,17 +11,11 @@ public class CustomersEntity
     [Column("Name")]
     public string Name { get; set; }
 
-    [Column("PhoneNumber")]
-    public int PhoneNumber { get; set; }
+    [Column("RealName")]
+    public string RealName { get; set; }
 
-    [Column("Email")]
-    public string Email { get; set; }
-
-    [Column("Address")]
-    public string Address { get; set; }
-
-    [Column("IsBorrowed")]
-    public bool IsBorrowed { get; set; }
+    [Column("Bio")]
+    public string Bio { get; set; }
 
     [Column("CreatedUserId")]
     public string CreatedUserId { get; set; }
@@ -34,5 +28,8 @@ public class CustomersEntity
 
     [Column("UpdatedDate")]
     public DateTime? UpdatedDate { get; set; }
+
+
+
 }
 
