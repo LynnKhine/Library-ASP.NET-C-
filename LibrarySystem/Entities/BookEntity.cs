@@ -3,7 +3,7 @@
 namespace LibrarySystem.Entities;
 
 [Table("Books")]
-public class BookEntity
+public class BookEntity : BaseEntity
 {
     [Column("Id")]
     public string Id { get; set; }
@@ -25,20 +25,6 @@ public class BookEntity
 
     [Column("AvailableQuantity")]
     public int AvailableQuantity { get; set; }
-
-    [Column("CreatedUserId")]
-    public string CreatedUserId { get; set; }
-
-    [Column("CreatedDate")]
-    public DateTime CreatedDate { get; set; }
-
-    [Column("UpdatedUserId")]
-    public string? UpdatedUserId { get; set; }
-
-    [Column("UpdatedDate")]
-    public DateTime? UpdatedDate { get; set; }
-
-
 
 }
 
