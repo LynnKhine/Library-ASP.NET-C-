@@ -32,8 +32,8 @@
 
     }
 
-    public class GetBorrowHistoryListResponseModel
+    public class GetBorrowHistoryByIdModel
     {
-        public List<GetBorrowHistoryRequestModel> ListBorrowHistories { get; set; } = new List<GetBorrowHistoryRequestModel>();
+        public string Id { get; set; }
     }
 }

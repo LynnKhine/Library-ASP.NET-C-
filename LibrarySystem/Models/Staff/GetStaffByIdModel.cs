@@ -32,8 +32,8 @@
 
     }
 
-    public class GetStaffListResponseModel
+    public class GetStaffByIdModel
     {
-        public List<GetStaffRequestModel> ListStaff { get; set; } = new List<GetStaffRequestModel>();
+        public string Id { get; set; }
     }
 }

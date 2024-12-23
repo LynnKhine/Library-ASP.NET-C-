@@ -20,8 +20,8 @@
 
     }
 
-    public class GetRoleListResponseModel
+    public class GetRoleByIdModel
     {
-        public List<GetRoleRequestModel> ListRoles { get; set; } = new List<GetRoleRequestModel>();
+        public string Id { get; set; }
     }
 }

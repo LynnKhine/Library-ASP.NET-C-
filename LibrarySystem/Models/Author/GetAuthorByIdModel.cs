@@ -31,8 +31,8 @@
         //public DateTime? UpdatedDate { get; set; }
     }
 
-    public class GetAuthorListResponseModel
+    public class GetAuthorByIdRequestModel
     {
-        public List<GetAuthorRequestModel> ListAuthors { get; set; } = new List<GetAuthorRequestModel>();
+        public string Id { get; set; }
     }
 }

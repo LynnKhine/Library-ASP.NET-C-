@@ -34,8 +34,8 @@
         public int AvailableQuantity { get; set; }
     }
 
-    public class GetBookListResponseModel
+    public class GetBookByIdModel
     {
-        public List<GetBookRequestModel> ListBooks { get; set; } = new List<GetBookRequestModel>();
+        public string Id { get; set; }
     }
 }

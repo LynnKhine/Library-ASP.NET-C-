@@ -32,8 +32,8 @@
 
     }
 
-    public class GetCustomerListResponseModel
+    public class GetCustomerByIdModel
     {
-        public List<GetCustomerRequestModel> ListCustomers { get; set; } = new List<GetCustomerRequestModel>();
+        public string Id { get; set; }
     }
 }

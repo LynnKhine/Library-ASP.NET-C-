@@ -20,8 +20,8 @@
 
     }
 
-    public class GetCategoryListResponseModel
+    public class GetCategoryByIdModel
     {
-        public List<GetCategoryRequestModel> ListCategories { get; set; } = new List<GetCategoryRequestModel>();
+        public string Id { get; set; }
     }
 }
