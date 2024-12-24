@@ -2,7 +2,7 @@
 {
     public class CreateAuthorRequestModel
     {
-        public string Id { get; set; }
+        
 
         public string Name { get; set; }
 
@@ -19,6 +19,6 @@
 
     public class CreateAuthorResponseModel
     {
-
+        public string AuthorId { get; set; }
     }
 }

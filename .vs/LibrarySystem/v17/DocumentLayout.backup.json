@@ -1,12 +1,914 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\LibrarySystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\author\\updateauthorbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\author\\updateauthorbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\author\\getauthorbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\author\\getauthorbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\author\\createauthormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\author\\createauthormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\author\\deleteauthorbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\author\\deleteauthorbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\authorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\authorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\bookentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\bookentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\author\\getauthorlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\author\\getauthorlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\book\\getbookbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\book\\getbookbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\staff\\getstafflistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\staff\\getstafflistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\role\\getrolelistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\role\\getrolelistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\customer\\getcustomerlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\customer\\getcustomerlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\category\\getcategorylistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\category\\getcategorylistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\borrowhistory\\getborrowhistorylistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\borrowhistory\\getborrowhistorylistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\book\\getbooklistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\book\\getbooklistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\staff\\getstaffbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\staff\\getstaffbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\role\\getrolebyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\role\\getrolebyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\customer\\getcustomerbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\customer\\getcustomerbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\category\\getcategorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\category\\getcategorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\borrowhistory\\getborrowhistorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\borrowhistory\\getborrowhistorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\staff\\updatestaffbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\staff\\updatestaffbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\role\\updaterolebyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\role\\updaterolebyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\customer\\updatecustomerbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\customer\\updatecustomerbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\category\\updatecategorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\category\\updatecategorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\borrowhistory\\updateborrowhistorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\borrowhistory\\updateborrowhistorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\book\\updatebookbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\book\\updatebookbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\role\\deleterolebyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\role\\deleterolebyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\staff\\deletestaffbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\staff\\deletestaffbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\customer\\deletecustomerbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\customer\\deletecustomerbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\category\\deletecategorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\category\\deletecategorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\borrowhistory\\deleteborrowhistorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\borrowhistory\\deleteborrowhistorybyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\book\\deletebookbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\book\\deletebookbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\models\\book\\createbookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\models\\book\\createbookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\staffentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\staffentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\roleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\roleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\entities\\borrowhistoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\entities\\borrowhistoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\services\\borrowhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\services\\borrowhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|c:\\users\\user\\source\\repos\\librarysystem\\librarysystem\\controllers\\borrowhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEA59C7-E645-40D3-9CC9-2A42CDBDFB21}|LibrarySystem\\LibrarySystem.csproj|solutionrelative:librarysystem\\controllers\\borrowhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\AuthorService.cs",
+              "RelativeToolTip": "LibrarySystem\\Services\\AuthorService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAwwEMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:41:41.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\AuthorController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwEUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:44:27.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAuthorByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\GetAuthorByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Author\\GetAuthorByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\GetAuthorByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Author\\GetAuthorByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:42:58.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateAuthorByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\UpdateAuthorByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Author\\UpdateAuthorByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\UpdateAuthorByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Author\\UpdateAuthorByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:44:58.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\appsettings.json",
+              "RelativeDocumentMoniker": "LibrarySystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\appsettings.json",
+              "RelativeToolTip": "LibrarySystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-24T09:54:38.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateAuthorModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\CreateAuthorModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Author\\CreateAuthorModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\CreateAuthorModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Author\\CreateAuthorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:42:57.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
+              "RelativeToolTip": "LibrarySystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:13:12.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:35:04.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeleteAuthorByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\DeleteAuthorByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Author\\DeleteAuthorByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\DeleteAuthorByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Author\\DeleteAuthorByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:44:40.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthorEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\AuthorEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\AuthorEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\AuthorEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\AuthorEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:41:48.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "LibrarySystem\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:41:54.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\BookEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\BookEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\BookEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\BookEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:42:59.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetAuthorListModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\GetAuthorListModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Author\\GetAuthorListModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Author\\GetAuthorListModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Author\\GetAuthorListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:11:06.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetBookByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\GetBookByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Book\\GetBookByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\GetBookByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Book\\GetBookByIdModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwCYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:43:04.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetRoleListModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\GetRoleListModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Role\\GetRoleListModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\GetRoleListModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Role\\GetRoleListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:12:08.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\StaffService.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Services\\StaffService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\StaffService.cs",
+              "RelativeToolTip": "LibrarySystem\\Services\\StaffService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:52:48.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetStaffListModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\GetStaffListModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Staff\\GetStaffListModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\GetStaffListModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Staff\\GetStaffListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:12:17.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetCustomerListModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\GetCustomerListModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Customer\\GetCustomerListModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\GetCustomerListModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Customer\\GetCustomerListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:11:58.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetCategoryListModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\GetCategoryListModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Category\\GetCategoryListModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\GetCategoryListModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Category\\GetCategoryListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:11:42.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetBorrowHistoryListModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryListModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryListModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryListModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:11:30.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetBookListModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\GetBookListModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Book\\GetBookListModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\GetBookListModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Book\\GetBookListModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:11:20.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetStaffByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\GetStaffByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Staff\\GetStaffByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\GetStaffByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Staff\\GetStaffByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:54:43.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetRoleByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\GetRoleByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Role\\GetRoleByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\GetRoleByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Role\\GetRoleByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:54:32.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetCustomerByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\GetCustomerByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Customer\\GetCustomerByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\GetCustomerByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Customer\\GetCustomerByIdModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA3wCQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:54:22.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetCategoryByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\GetCategoryByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Category\\GetCategoryByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\GetCategoryByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Category\\GetCategoryByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:54:10.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetBorrowHistoryByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\BorrowHistory\\GetBorrowHistoryByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:53:59.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\BookController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:45:19.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UpdateStaffByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\UpdateStaffByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Staff\\UpdateStaffByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\UpdateStaffByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Staff\\UpdateStaffByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:47:50.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UpdateCustomerByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\UpdateCustomerByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Customer\\UpdateCustomerByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\UpdateCustomerByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Customer\\UpdateCustomerByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:47:00.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateRoleByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\UpdateRoleByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Role\\UpdateRoleByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\UpdateRoleByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Role\\UpdateRoleByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:47:19.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UpdateBorrowHistoryByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\UpdateBorrowHistoryByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\BorrowHistory\\UpdateBorrowHistoryByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\UpdateBorrowHistoryByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\BorrowHistory\\UpdateBorrowHistoryByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:46:09.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UpdateCategoryByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\UpdateCategoryByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Category\\UpdateCategoryByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\UpdateCategoryByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Category\\UpdateCategoryByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:46:41.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UpdateBookByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\UpdateBookByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Book\\UpdateBookByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\UpdateBookByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Book\\UpdateBookByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:45:41.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DeleteRoleByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\DeleteRoleByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Role\\DeleteRoleByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Role\\DeleteRoleByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Role\\DeleteRoleByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:47:09.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DeleteStaffByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\DeleteStaffByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Staff\\DeleteStaffByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Staff\\DeleteStaffByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Staff\\DeleteStaffByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:47:36.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DeleteCustomerByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\DeleteCustomerByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Customer\\DeleteCustomerByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Customer\\DeleteCustomerByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Customer\\DeleteCustomerByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:46:51.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DeleteCategoryByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\DeleteCategoryByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Category\\DeleteCategoryByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Category\\DeleteCategoryByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Category\\DeleteCategoryByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:46:31.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DeleteBorrowHistoryByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\DeleteBorrowHistoryByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\BorrowHistory\\DeleteBorrowHistoryByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\BorrowHistory\\DeleteBorrowHistoryByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\BorrowHistory\\DeleteBorrowHistoryByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:45:57.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DeleteBookByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\DeleteBookByIdModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Book\\DeleteBookByIdModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\DeleteBookByIdModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Book\\DeleteBookByIdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:45:31.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CreateBookModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\CreateBookModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Models\\Book\\CreateBookModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Models\\Book\\CreateBookModel.cs",
+              "RelativeToolTip": "LibrarySystem\\Models\\Book\\CreateBookModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T08:43:16.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CustomerEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\CustomerEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\CustomerEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\CustomerEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\CustomerEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:43:12.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RoleEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\RoleEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\RoleEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\RoleEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\RoleEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:43:15.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "StaffEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\StaffEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\StaffEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\StaffEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\StaffEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:43:17.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CategoryEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\CategoryEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\CategoryEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\CategoryEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\CategoryEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:43:08.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "BorrowHistoryEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\BorrowHistoryEntity.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Entities\\BorrowHistoryEntity.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Entities\\BorrowHistoryEntity.cs",
+              "RelativeToolTip": "LibrarySystem\\Entities\\BorrowHistoryEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:43:03.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\RoleService.cs",
+              "RelativeToolTip": "LibrarySystem\\Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:52:42.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\CustomerService.cs",
+              "RelativeToolTip": "LibrarySystem\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:52:35.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\CategoryService.cs",
+              "RelativeToolTip": "LibrarySystem\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:52:21.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "BorrowHistoryService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\BorrowHistoryService.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Services\\BorrowHistoryService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\BorrowHistoryService.cs",
+              "RelativeToolTip": "LibrarySystem\\Services\\BorrowHistoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:52:12.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Services\\BookService.cs",
+              "RelativeToolTip": "LibrarySystem\\Services\\BookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:51:59.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\StaffController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\StaffController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:46:28.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:46:21.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:46:07.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:45:49.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "BorrowHistoryController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\BorrowHistoryController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\BorrowHistoryController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\BorrowHistoryController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\BorrowHistoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:45:29.3Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
