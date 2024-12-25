@@ -19,9 +19,31 @@ namespace LibrarySystem.Controllers
         [Route("CreateAuthor")]
         public IActionResult CreateAuthor(CreateAuthorRequestModel model)
         {
-            var result = _service.CreateAuthor(model);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return Ok(result);
+            try
+            {
+                var result = _service.CreateAuthor(model);
+
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+
+            }
+            catch (Exception ex) 
+            {
+                var message = ex.Message;
+                return BadRequest(message); 
+            }
+            
         }
 
         [HttpGet]
@@ -29,10 +51,32 @@ namespace LibrarySystem.Controllers
 
         public IActionResult GetAuthorByIdHttpGet(string id)
         {
-            var model = new GetAuthorByIdRequestModel { Id = id };
-            var result = _service.GetAuthorById(model);
+    
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return Ok(result);
+            try
+            {
+                var model = new GetAuthorByIdRequestModel { Id = id };
+                var result = _service.GetAuthorById(model);
+
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var message = ex.Message;
+                return BadRequest(message);
+            }
         }
 
         [HttpPost]
@@ -40,9 +84,31 @@ namespace LibrarySystem.Controllers
 
         public IActionResult GetAuthorById(GetAuthorByIdRequestModel model)
         {
-            var result = _service.GetAuthorById(model);
+           
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return Ok(result);
+            try
+            {
+                var result = _service.GetAuthorById(model);
+
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var message = ex.Message;
+                return BadRequest(message);
+            }
         }
 
         [HttpPost]
@@ -50,9 +116,31 @@ namespace LibrarySystem.Controllers
 
         public IActionResult GetAuthorList(GetAuthorListRequestModel model)
         {
-            var result = _service.GetAuthorList(model);
+            
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return Ok(result);
+            try
+            {
+                var result = _service.GetAuthorList(model);
+
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var message = ex.Message;
+                return BadRequest(message);
+            }
         }
 
         [HttpPost]
@@ -60,9 +148,31 @@ namespace LibrarySystem.Controllers
 
         public IActionResult DeleteAuthorById(DeleteAuthorByIdRequestModel model)
         {
-            var result = _service.DeleteAuthorById(model);
+            
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return Ok("Successfully Deleted");
+            try
+            {
+                var result = _service.DeleteAuthorById(model);
+
+                if (result != null)
+                {
+                    return Ok("Successfully Deleted");
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var message = ex.Message;
+                return BadRequest(message);
+            }
         }
 
         [HttpPost]
@@ -70,9 +180,31 @@ namespace LibrarySystem.Controllers
 
         public IActionResult UpdateAuthorById(UpdateAuthorByIdRequestModel model)
         {
-            var result = _service.UpdateAuthorById(model);
+            
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return Ok("Succesfully Updated");
+            try
+            {
+                var result = _service.UpdateAuthorById(model);
+
+                if (result != null)
+                {
+                    return Ok("Succesfully Updated");
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var message = ex.Message;
+                return BadRequest(message);
+            }
         }
     }
 }
