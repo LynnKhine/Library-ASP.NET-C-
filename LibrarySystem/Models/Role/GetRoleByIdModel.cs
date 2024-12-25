@@ -20,7 +20,7 @@
 
     }
 
-    public class GetRoleByIdModel
+    public class GetRoleByIdRequestModel
     {
         public string Id { get; set; }
     }

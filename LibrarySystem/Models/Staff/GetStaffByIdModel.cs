@@ -32,7 +32,7 @@
 
     }
 
-    public class GetStaffByIdModel
+    public class GetStaffByIdRequestModel
     {
         public string Id { get; set; }
     }

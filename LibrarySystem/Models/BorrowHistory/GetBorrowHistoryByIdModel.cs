@@ -32,7 +32,7 @@
 
     }
 
-    public class GetBorrowHistoryByIdModel
+    public class GetBorrowHistoryByIdRequestModel
     {
         public string Id { get; set; }
     }

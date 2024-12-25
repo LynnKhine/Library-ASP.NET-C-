@@ -24,15 +24,16 @@ namespace LibrarySystem.Controllers
             return Ok(result);
         }
 
-        //[HttpGet]
-        //[Route("GetAuthorById")]
+        [HttpGet]
+        [Route("GetAuthorById")]
 
-        //public IActionResult GetAuthorById(GetAuthorByIdRequestModel model)
-        //{
-        //    var result = _service.GetAuthorById(model);
+        public IActionResult GetAuthorByIdHttpGet(string id)
+        {
+            var model = new GetAuthorByIdRequestModel { Id = id };
+            var result = _service.GetAuthorById(model);
 
-        //    return Ok(result);
-        //}
+            return Ok(result);
+        }
 
         [HttpPost]
         [Route("GetAuthorById")]

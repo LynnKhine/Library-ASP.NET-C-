@@ -16,6 +16,6 @@
 
     public class CreateCategoryResponseModel
     {
-
+        public string CategoryId { get; set; }
     }
 }

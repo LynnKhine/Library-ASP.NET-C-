@@ -22,6 +22,6 @@
 
     public class CreateStaffResponseModel
     {
-
+        public string StaffId { get; set; }
     }
 }

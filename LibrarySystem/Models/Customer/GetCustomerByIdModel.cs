@@ -32,7 +32,7 @@
 
     }
 
-    public class GetCustomerByIdModel
+    public class GetCustomerByIdRequestModel
     {
         public string Id { get; set; }
     }

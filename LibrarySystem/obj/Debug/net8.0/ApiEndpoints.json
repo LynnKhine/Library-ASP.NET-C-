@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "LibrarySystem.Controllers.AuthorController",
+    "Method": "GetAuthorByIdHttpGet",
+    "RelativePath": "api/Author/GetAuthorById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.AuthorController",
     "Method": "GetAuthorById",
     "RelativePath": "api/Author/GetAuthorById",
     "HttpMethod": "POST",

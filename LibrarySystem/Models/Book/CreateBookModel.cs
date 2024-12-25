@@ -17,6 +17,6 @@
 
     public class CreateBookResponseModel
     {
-        
+        public string BookId { get; set; }
     }
 }

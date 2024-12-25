@@ -20,7 +20,7 @@
 
     }
 
-    public class GetCategoryByIdModel
+    public class GetCategoryByIdRequestModel
     {
         public string Id { get; set; }
     }

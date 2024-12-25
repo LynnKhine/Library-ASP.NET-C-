@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LibrarySystem.Entities;
 using LibrarySystem.Data;
-using LibrarySystem.Models;
 using LibrarySystem.Models.Author;
 
 namespace LibrarySystem.Services

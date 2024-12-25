@@ -34,7 +34,7 @@
         public int AvailableQuantity { get; set; }
     }
 
-    public class GetBookByIdModel
+    public class GetBookByIdRequestModel
     {
         public string Id { get; set; }
     }
