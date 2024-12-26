@@ -2,6 +2,7 @@
 using LibrarySystem.Entities;
 using LibrarySystem.Data;
 using LibrarySystem.Models.Book;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace LibrarySystem.Services
 {
@@ -38,6 +39,7 @@ namespace LibrarySystem.Services
             return result;
         }
 
+        //Without Join for Get
         public GetBookResponseModel GetBookById(GetBookByIdRequestModel model)
         {
             var book = _context.BookDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
@@ -59,6 +61,92 @@ namespace LibrarySystem.Services
         {
             var result = new GetBookListResponseModel();
             result.BookList = _context.BookDbSet.AsNoTracking().ToList();
+
+            return result;
+        }
+
+        //With Join for Get
+        public GetBookByIdResponseModel GetBookById(string bookId)
+        {
+            var bookDetails = _context.BookDbSet
+                .Join(_context.AuthorDbSet,
+                        book => book.AuthorId,
+                        author => author.Id,
+                        (book, author) => new { book, author })
+                .Join(_context.CategoryDbSet,
+                        book_author => book_author.book.CategoryId,
+                        category => category.Id,
+                        (book_author, category) => new
+                        {
+                            book_author.book,
+                            book_author.author,
+                            category
+                        })
+                .Where(book => book.book.Id == bookId)
+                .AsNoTracking()
+                .Select(book => new GetBookRequestModel
+                {
+                    Id = book.book.Id,
+                    Name = book.book.Name,
+                    AuthorName = book.author.Name,
+                    CategoryName = book.category.Name,
+                    PublishedYear = book.book.PublishedYear,
+                    TotalQuantity = book.book.TotalQuantity,
+                    AvailableQuantity = book.book.AvailableQuantity
+                })
+                .FirstOrDefault();
+
+            if (bookDetails == null)
+            {
+                throw new KeyNotFoundException($"Book with Id {bookId} not found.");
+            }
+
+            return new GetBookByIdResponseModel
+            {
+                Book = bookDetails
+            };
+        }
+
+        public List<GetBookListModel> GetBookListJoin(GetBookListRequestModel model)
+        {
+            var booklist = _context.BookDbSet
+                .Join(_context.AuthorDbSet,
+                        book => book.AuthorId,
+                        author => author.Id,
+                        (book, author) => new { book, author })
+                .Join(_context.CategoryDbSet,
+                        book_author => book_author.book.CategoryId,
+                        category => category.Id,
+                        (book_author, category) => new
+                        {
+                            book_author.book,
+                            book_author.author,
+                            category
+                        })
+                .Where(book => book.author.Name == model.AuthorName && book.category.Name == model.CategoryName)
+                .AsNoTracking()
+                .Select(book => new GetBookListModel
+                {
+                    Id = book.book.Id,
+                    Name = book.book.Name,
+                    AuthorName = book.author.Name,
+                    CategoryName = book.category.Name,
+                    PublishedYear = book.book.PublishedYear,
+                    TotalQuantity = book.book.TotalQuantity,
+                    AvailableQuantity = book.book.AvailableQuantity
+                }).ToList();
+
+            var author = _context.AuthorDbSet.Where(a => a.Name == model.AuthorName)
+                .AsNoTracking().FirstOrDefault();
+            var category = _context.CategoryDbSet.Where(c => c.Name == model.CategoryName)
+                .AsNoTracking().FirstOrDefault();
+
+            GetBookListResponseModel result = new GetBookListResponseModel()
+            {
+                AuthorName = author.Name,
+                CategoryName = category.Name,
+                BookList = booklist
+            };
 
             return result;
         }

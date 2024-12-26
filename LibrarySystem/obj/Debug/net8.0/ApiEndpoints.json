@@ -94,5 +94,581 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BookController",
+    "Method": "CreateBook",
+    "RelativePath": "api/Book/CreateBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Book.CreateBookRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BookController",
+    "Method": "DeleteBookById",
+    "RelativePath": "api/Book/DeleteBookById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Book.DeleteBookByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BookController",
+    "Method": "GetBookByIdHttpGet",
+    "RelativePath": "api/Book/GetBookById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BookController",
+    "Method": "GetBookById",
+    "RelativePath": "api/Book/GetBookById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Book.GetBookByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BookController",
+    "Method": "GetBookList",
+    "RelativePath": "api/Book/GetBookList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Book.GetBookListRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BookController",
+    "Method": "UpdateBookById",
+    "RelativePath": "api/Book/UpdateBookById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Book.UpdateBookByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BorrowHistoryController",
+    "Method": "CreateBorrowHistory",
+    "RelativePath": "api/BorrowHistory/CreateBorrowHistory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.BorrowHistory.CreateBorrowHistoryRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BorrowHistoryController",
+    "Method": "DeleteBorrowHistoryById",
+    "RelativePath": "api/BorrowHistory/DeleteBorrowHistoryById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.BorrowHistory.DeleteBorrowHistoryByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BorrowHistoryController",
+    "Method": "GetBorrowHistoryByIdHttpGet",
+    "RelativePath": "api/BorrowHistory/GetBorrowHistoryById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BorrowHistoryController",
+    "Method": "GetBorrowHistoryById",
+    "RelativePath": "api/BorrowHistory/GetBorrowHistoryById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.BorrowHistory.GetBorrowHistoryByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BorrowHistoryController",
+    "Method": "GetBorrowHistoryList",
+    "RelativePath": "api/BorrowHistory/GetBorrowHistoryList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.BorrowHistory.GetBorrowHistoryListRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.BorrowHistoryController",
+    "Method": "UpdateBorrowHistoryById",
+    "RelativePath": "api/BorrowHistory/UpdateBorrowHistoryById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.BorrowHistory.UpdateBorrowHistoryByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CategoryController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Category/CreateCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Category.CreateCategoryRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CategoryController",
+    "Method": "DeleteCategoryById",
+    "RelativePath": "api/Category/DeleteCategoryById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Category.DeleteCategoryByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CategoryController",
+    "Method": "GetCategoryByIdHttpGet",
+    "RelativePath": "api/Category/GetCategoryById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CategoryController",
+    "Method": "GetCategoryById",
+    "RelativePath": "api/Category/GetCategoryById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Category.GetCategoryByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CategoryController",
+    "Method": "GetCategoryList",
+    "RelativePath": "api/Category/GetCategoryList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Category.GetCategoryListRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CategoryController",
+    "Method": "UpdateCategoryById",
+    "RelativePath": "api/Category/UpdateCategoryById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Category.UpdateCategoryByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CustomerController",
+    "Method": "CreateCustomer",
+    "RelativePath": "api/Customer/CreateCustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Customer.CreateCustomerRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CustomerController",
+    "Method": "DeleteCustomerById",
+    "RelativePath": "api/Customer/DeleteCustomerById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Customer.DeleteCustomerByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CustomerController",
+    "Method": "GetCustomerByIdHttpGet",
+    "RelativePath": "api/Customer/GetCustomerById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CustomerController",
+    "Method": "GetCustomerById",
+    "RelativePath": "api/Customer/GetCustomerById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Customer.GetCustomerByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CustomerController",
+    "Method": "GetCustomerList",
+    "RelativePath": "api/Customer/GetCustomerList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Customer.GetCustomerListRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.CustomerController",
+    "Method": "UpdateCustomerById",
+    "RelativePath": "api/Customer/UpdateCustomerById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Customer.UpdateCustomerByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.RoleController",
+    "Method": "CreateRole",
+    "RelativePath": "api/Role/CreateRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Role.CreateRoleRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.RoleController",
+    "Method": "DeleteRoleById",
+    "RelativePath": "api/Role/DeleteRoleById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Role.DeleteRoleByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.RoleController",
+    "Method": "GetRoleByIdHttpGet",
+    "RelativePath": "api/Role/GetRoleById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.RoleController",
+    "Method": "GetRoleById",
+    "RelativePath": "api/Role/GetRoleById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Role.GetRoleByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.RoleController",
+    "Method": "GetRoleList",
+    "RelativePath": "api/Role/GetRoleList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Role.GetRoleListRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.RoleController",
+    "Method": "UpdateRoleById",
+    "RelativePath": "api/Role/UpdateRoleById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Role.UpdateRoleByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.StaffController",
+    "Method": "CreateStaff",
+    "RelativePath": "api/Staff/CreateStaff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Staff.CreateStaffRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.StaffController",
+    "Method": "DeleteStaffById",
+    "RelativePath": "api/Staff/DeleteStaffById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Staff.DeleteStaffByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.StaffController",
+    "Method": "GetStaffByIdHttpGet",
+    "RelativePath": "api/Staff/GetStaffById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.StaffController",
+    "Method": "GetStaffById",
+    "RelativePath": "api/Staff/GetStaffById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Staff.GetStaffByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.StaffController",
+    "Method": "GetStaffList",
+    "RelativePath": "api/Staff/GetStaffList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Staff.GetStaffListRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.StaffController",
+    "Method": "UpdateStaffById",
+    "RelativePath": "api/Staff/UpdateStaffById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Staff.UpdateStaffByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

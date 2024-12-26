@@ -21,8 +21,9 @@ namespace LibrarySystem.Services
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = model.Name,
-                RealName = model.RealName,
-                Bio = model.Bio,
+                Email = model.Email,
+                UserName = model.UserName,
+                HashedPassword = model.HashedPassword,
                 CreatedUserId = "1",
                 CreatedDate = DateTime.Now,
             };
@@ -45,9 +46,11 @@ namespace LibrarySystem.Services
             {
                 Id = staff.Id,
                 Name = staff.Name,
-                RealName = staff.RealName,
-                Bio = staff.Bio
+                Email = staff.Email,
+                UserName = staff.UserName,
+                HashedPassword = staff.HashedPassword
             };
+          
 
 
             return result;
@@ -65,8 +68,9 @@ namespace LibrarySystem.Services
         {
             var staff = _context.StaffDbSet.Where(a => a.Id == model.Id).FirstOrDefault();
             staff.Name = model.Name;
-            staff.RealName = model.RealName;
-            staff.Bio = model.Bio;
+            staff.Email = model.Email;
+            staff.UserName = model.UserName;
+            staff.HashedPassword = model.HashedPassword;
             staff.UpdatedUserId = "2";
             staff.UpdatedDate = DateTime.Now;
 
