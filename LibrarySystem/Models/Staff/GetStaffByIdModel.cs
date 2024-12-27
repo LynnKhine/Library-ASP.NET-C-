@@ -7,6 +7,7 @@
         public string Name { get; set; }
 
         public string RoleId { get; set; }
+        public string RoleName { get; set; }
 
         public string Email { get; set; }
 
@@ -23,6 +24,7 @@
         public string Name { get; set; }
 
         public string RoleId { get; set; }
+        public string RoleName { get; set; }
 
         public string Email { get; set; }
 
@@ -35,5 +37,10 @@
     public class GetStaffByIdRequestModel
     {
         public string Id { get; set; }
+    }
+
+    public class GetStaffByIdResponseModel
+    {
+        public GetStaffRequestModel Staff { get; set; }
     }
 }
