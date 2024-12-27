@@ -35,4 +35,12 @@ namespace LibrarySystem.Models.Book
 
         public List<BookEntity> BookList { get; set; } = new List<BookEntity>();
     }
+    public class GetBookListResponseModelJoin
+    {
+        public string AuthorName { get; set; }
+        public string CategoryName { get; set; }
+
+        public List<GetBookListModel> BookList { get; set; } = new List<GetBookListModel>();
+    }
+
 }

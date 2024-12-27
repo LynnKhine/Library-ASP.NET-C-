@@ -66,9 +66,9 @@ namespace LibrarySystem.Services
         }
 
         //With Join for Get
-        public GetBookByIdResponseModel GetBookById(string bookId)
+        public GetBookByIdResponseModel GetBookByIdJoin(GetBookByIdRequestModel model)
         {
-            var bookDetails = _context.BookDbSet
+            var bookdetails = _context.BookDbSet
                 .Join(_context.AuthorDbSet,
                         book => book.AuthorId,
                         author => author.Id,
@@ -82,8 +82,6 @@ namespace LibrarySystem.Services
                             book_author.author,
                             category
                         })
-                .Where(book => book.book.Id == bookId)
-                .AsNoTracking()
                 .Select(book => new GetBookRequestModel
                 {
                     Id = book.book.Id,
@@ -96,18 +94,21 @@ namespace LibrarySystem.Services
                 })
                 .FirstOrDefault();
 
-            if (bookDetails == null)
+            if (bookdetails == null)
             {
-                throw new KeyNotFoundException($"Book with Id {bookId} not found.");
+                throw new KeyNotFoundException($"Book with Id {bookdetails} not found.");
             }
 
-            return new GetBookByIdResponseModel
+            GetBookByIdResponseModel getBookByIdResponse = new GetBookByIdResponseModel()
             {
-                Book = bookDetails
+                Book = bookdetails
             };
+
+
+            return getBookByIdResponse;
         }
 
-        public List<GetBookListModel> GetBookListJoin(GetBookListRequestModel model)
+        public List<GetBookListResponseModelJoin> GetBookListJoin(GetBookListRequestModel model)
         {
             var booklist = _context.BookDbSet
                 .Join(_context.AuthorDbSet,
@@ -129,7 +130,9 @@ namespace LibrarySystem.Services
                 {
                     Id = book.book.Id,
                     Name = book.book.Name,
+                    AuthorId = book.author.Id,
                     AuthorName = book.author.Name,
+                    CategoryId = book.category.Id,
                     CategoryName = book.category.Name,
                     PublishedYear = book.book.PublishedYear,
                     TotalQuantity = book.book.TotalQuantity,

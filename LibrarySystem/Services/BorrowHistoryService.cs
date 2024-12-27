@@ -37,6 +37,7 @@ namespace LibrarySystem.Services
             return result;
         }
 
+        //Without Join for Get
         public GetBorrowHistoryResponseModel GetBorrowHistoryById(GetBorrowHistoryByIdRequestModel model)
         {
             var borrowhistory = _context.BorrowHistoryDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
@@ -60,6 +61,12 @@ namespace LibrarySystem.Services
 
             return result;
         }
+
+        //With Join for Get
+        public GetBorrowHis
+
+        Customer Book Id 
+
 
         public UpdateBorrowHistoryByIdResponseModel UpdateBorrowHistoryById(UpdateBorrowHistoryByIdRequestModel model)
         {
