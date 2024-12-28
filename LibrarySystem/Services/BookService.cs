@@ -40,11 +40,11 @@ namespace LibrarySystem.Services
         }
 
         //Without Join for Get
-        public GetBookResponseModel GetBookById(GetBookByIdRequestModel model)
+        public GetBookByIdResponseModel GetBookById(GetBookByIdRequestModel model)
         {
             var book = _context.BookDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            GetBookResponseModel result = new GetBookResponseModel()
+            BookModel bookmodel = new BookModel()
             {
                 Id = book.Id,
                 Name = book.Name,
@@ -53,8 +53,17 @@ namespace LibrarySystem.Services
                 AvailableQuantity = book.AvailableQuantity
             };
 
+            GetBookByIdResponseModel result = new GetBookByIdResponseModel()
+            {
+                Book = bookmodel
+            };
 
             return result;
+
+            //return new GetBookByIdResponseModel
+            //{
+            //    Book = result
+            //};
         }
 
         public GetBookListResponseModel GetBookList(GetBookListRequestModel model)
@@ -82,33 +91,34 @@ namespace LibrarySystem.Services
                             book_author.author,
                             category
                         })
-                .Select(book => new GetBookRequestModel
+                //.Where(book => book.author.Id == model.AuthorId && book.category.Id == model.CategoryId)
+                .Select(book => new BookModel
                 {
                     Id = book.book.Id,
                     Name = book.book.Name,
+                    AuthorId = book.book.AuthorId,
                     AuthorName = book.author.Name,
+                    CategoryId = book.book.CategoryId,
                     CategoryName = book.category.Name,
                     PublishedYear = book.book.PublishedYear,
                     TotalQuantity = book.book.TotalQuantity,
                     AvailableQuantity = book.book.AvailableQuantity
-                })
-                .FirstOrDefault();
+                }).FirstOrDefault();
 
-            if (bookdetails == null)
-            {
-                throw new KeyNotFoundException($"Book with Id {bookdetails} not found.");
-            }
+            //if (bookdetails == null)
+            //{
+            //    throw new KeyNotFoundException($"Book with Id {bookdetails} not found.");
+            //}
 
-            GetBookByIdResponseModel getBookByIdResponse = new GetBookByIdResponseModel()
+            GetBookByIdResponseModel result = new GetBookByIdResponseModel()
             {
                 Book = bookdetails
             };
 
-
-            return getBookByIdResponse;
+            return result;
         }
 
-        public List<GetBookListResponseModelJoin> GetBookListJoin(GetBookListRequestModel model)
+        public GetBookListResponseModelJoin GetBookListJoin(GetBookListRequestModel model)
         {
             var booklist = _context.BookDbSet
                 .Join(_context.AuthorDbSet,
@@ -126,7 +136,7 @@ namespace LibrarySystem.Services
                         })
                 .Where(book => book.author.Name == model.AuthorName && book.category.Name == model.CategoryName)
                 .AsNoTracking()
-                .Select(book => new GetBookListModel
+                .Select(book => new BookModel
                 {
                     Id = book.book.Id,
                     Name = book.book.Name,
@@ -144,7 +154,7 @@ namespace LibrarySystem.Services
             var category = _context.CategoryDbSet.Where(c => c.Name == model.CategoryName)
                 .AsNoTracking().FirstOrDefault();
 
-            GetBookListResponseModel result = new GetBookListResponseModel()
+            GetBookListResponseModelJoin result = new GetBookListResponseModelJoin()
             {
                 AuthorName = author.Name,
                 CategoryName = category.Name,
@@ -153,6 +163,7 @@ namespace LibrarySystem.Services
 
             return result;
         }
+        
 
         public UpdateBookByIdResponseModel UpdateBookById(UpdateBookByIdRequestModel model)
         {

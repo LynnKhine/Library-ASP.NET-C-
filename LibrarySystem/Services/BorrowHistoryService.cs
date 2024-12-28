@@ -63,9 +63,31 @@ namespace LibrarySystem.Services
         }
 
         //With Join for Get
-        public GetBorrowHis
+        public GetBorrowHistoryByIdResponseModel GetBorrowHistoryByIdJoin(GetBorrowHistoryRequestModel model)
+        {
+            var borrowhistorydetails = _context.BorrowHistoryDbSet
+                .Join(_context.CustomerDbSet,
+                        borrowhistory => borrowhistory.CustomerId,
+                        customer => customer.Id,
+                        (borrowhistory, customer) => new {borrowhistory,  customer})
+                .Join(_context.BookDbSet,
+                        borrowhistory_customer => borrowhistory_customer.borrowhistory.BookId,
+                        book => book.Id,
+                        (borrowhistory_customer, book) => new
+                        {
+                            borrowhistory_customer.borrowhistory,
+                            borrowhistory_customer.customer,
+                            book
+                        })
+                .Select(borrowhistory => new GetBorrowHistoryRequestModel
+                {
+                    Id = borrowhistory.borrowhistory.Id,
+                    CustomerId = borrowhistory.customer.Id,
+                    Cust
+                 
+                })
+        }
 
-        Customer Book Id 
 
 
         public UpdateBorrowHistoryByIdResponseModel UpdateBorrowHistoryById(UpdateBorrowHistoryByIdRequestModel model)
