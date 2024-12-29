@@ -21,6 +21,7 @@ namespace LibrarySystem.Services
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = model.Name,
+                RoleId = model.RoleId,
                 Email = model.Email,
                 UserName = model.UserName,
                 HashedPassword = model.HashedPassword,

@@ -22,6 +22,8 @@ namespace LibrarySystem.Services
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = model.Name,
+                AuthorId = model.AuthorId,
+                CategoryId = model.CategoryId,
                 PublishedYear = model.PublishedYear,
                 TotalQuantity = model.TotalQuantity,
                 AvailableQuantity = model.AvailableQuantity,

@@ -16,4 +16,4 @@
         public string HashedPassword { get; set; }
     }
 }
-}
+

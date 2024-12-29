@@ -2,8 +2,6 @@
 {
     public class CreateBorrowHistoryRequestModel
     {
-        public string Id { get; set; }
-
         public string CustomerId { get; set; }
 
         public string BookId { get; set; }

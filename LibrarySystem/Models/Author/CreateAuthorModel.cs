@@ -2,8 +2,6 @@
 {
     public class CreateAuthorRequestModel
     {
-        
-
         public string Name { get; set; }
 
         public string RealName { get; set; }

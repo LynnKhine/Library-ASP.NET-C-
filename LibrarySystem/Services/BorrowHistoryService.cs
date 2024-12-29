@@ -21,6 +21,8 @@ namespace LibrarySystem.Services
             BorrowHistoryEntity borrowhistory = new BorrowHistoryEntity()
             {
                 Id = Guid.NewGuid().ToString(),
+                CustomerId = model.CustomerId,
+                BookId = model.BookId,
                 BorrowDate = DateTime.Now,
                 DueDate = DateTime.Now.AddDays(14),
                 ReturnDate = DateTime.MinValue,
