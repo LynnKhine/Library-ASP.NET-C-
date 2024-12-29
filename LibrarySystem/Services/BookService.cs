@@ -156,7 +156,7 @@ namespace LibrarySystem.Services
 
             GetBookListResponseModelJoin result = new GetBookListResponseModelJoin()
             {
-                AuthorName = author.Name,
+                AuthorName = author.Name,               // ? there will be duplicate cause already declared in select lets see
                 CategoryName = category.Name,
                 BookList = booklist
             };
