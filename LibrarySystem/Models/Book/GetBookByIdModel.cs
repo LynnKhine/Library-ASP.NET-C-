@@ -8,6 +8,6 @@
 
     public class GetBookByIdResponseModel
     {
-        public BookModel Book { get; set; }
+        public BookModel BookRes { get; set; }
     }
 }

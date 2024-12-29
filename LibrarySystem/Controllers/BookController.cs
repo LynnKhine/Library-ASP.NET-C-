@@ -60,7 +60,7 @@ namespace LibrarySystem.Controllers
             try
             {
                 var model = new GetBookByIdRequestModel { Id = id };
-                var result = _service.GetBookById(model);
+                var result = _service.GetBookByIdJoin(model);
 
                 if (result != null)
                 {
@@ -92,7 +92,7 @@ namespace LibrarySystem.Controllers
 
             try
             {
-                var result = _service.GetBookById(model);
+                var result = _service.GetBookByIdJoin(model);
 
                 if (result != null)
                 {
@@ -124,43 +124,11 @@ namespace LibrarySystem.Controllers
 
             try
             {
-                var result = _service.GetBookList(model);
+                var result = _service.GetBookListJoin(model);
 
                 if (result != null)
                 {
                     return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
-        }
-
-        [HttpPost]
-        [Route("DeleteBookById")]
-
-        public IActionResult DeleteBookById(DeleteBookByIdRequestModel model)
-        {
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            try
-            {
-                var result = _service.DeleteBookById(model);
-
-                if (result != null)
-                {
-                    return Ok("Successfully Deleted");
                 }
                 else
                 {
@@ -193,6 +161,38 @@ namespace LibrarySystem.Controllers
                 if (result != null)
                 {
                     return Ok("Succesfully Updated");
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var message = ex.Message;
+                return BadRequest(message);
+            }
+        }
+
+        [HttpPost]
+        [Route("DeleteBookById")]
+
+        public IActionResult DeleteBookById(DeleteBookByIdRequestModel model)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var result = _service.DeleteBookById(model);
+
+                if (result != null)
+                {
+                    return Ok("Successfully Deleted");
                 }
                 else
                 {

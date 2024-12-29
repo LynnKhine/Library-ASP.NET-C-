@@ -55,7 +55,7 @@ namespace LibrarySystem.Services
 
             GetBookByIdResponseModel result = new GetBookByIdResponseModel()
             {
-                Book = bookmodel
+                BookRes = bookmodel
             };
 
             return result;
@@ -112,7 +112,7 @@ namespace LibrarySystem.Services
 
             GetBookByIdResponseModel result = new GetBookByIdResponseModel()
             {
-                Book = bookdetails
+                BookRes = bookdetails
             };
 
             return result;
