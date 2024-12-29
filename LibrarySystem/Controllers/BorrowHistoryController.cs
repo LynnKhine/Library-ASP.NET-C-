@@ -2,209 +2,208 @@
 using LibrarySystem.Models.BorrowHistory;
 using LibrarySystem.Services;
 
-namespace LibrarySystem.Controllers
+namespace LibrarySystem.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class BorrowHistoryController : Controller
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class BorrowHistoryController : Controller
+    private readonly BorrowHistoryService _service;
+
+    public BorrowHistoryController(BorrowHistoryService service)
     {
-        private readonly BorrowHistoryService _service;
+        _service = service;
+    }
 
-        public BorrowHistoryController(BorrowHistoryService service)
+    [HttpPost]
+    [Route("CreateBorrowHistory")]
+    public IActionResult CreateBorrowHistory(CreateBorrowHistoryRequestModel model)
+    {
+        if (!ModelState.IsValid)
         {
-            _service = service;
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("CreateBorrowHistory")]
-        public IActionResult CreateBorrowHistory(CreateBorrowHistoryRequestModel model)
+        try
         {
-            if (!ModelState.IsValid)
+            var result = _service.CreateBorrowHistory(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.CreateBorrowHistory(model);
-
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
-
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
 
-        [HttpGet]
-        [Route("GetBorrowHistoryById")]
+    }
 
-        public IActionResult GetBorrowHistoryByIdHttpGet(string id)
+    [HttpGet]
+    [Route("GetBorrowHistoryById")]
+
+    public IActionResult GetBorrowHistoryByIdHttpGet(string id)
+    {
+
+        if (!ModelState.IsValid)
         {
+            return BadRequest(ModelState);
+        }
 
-            if (!ModelState.IsValid)
+        try
+        {
+            var model = new GetBorrowHistoryByIdRequestModel { Id = id };
+            var result = _service.GetBorrowHistoryByIdJoin(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var model = new GetBorrowHistoryByIdRequestModel { Id = id };
-                var result = _service.GetBorrowHistoryByIdJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetBorrowHistoryById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetBorrowHistoryById(GetBorrowHistoryByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetBorrowHistoryById")]
-
-        public IActionResult GetBorrowHistoryById(GetBorrowHistoryByIdRequestModel model)
+        try
         {
+            var result = _service.GetBorrowHistoryByIdJoin(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetBorrowHistoryByIdJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetBorrowHistoryList")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetBorrowHistoryList(GetBorrowHistoryListRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetBorrowHistoryList")]
-
-        public IActionResult GetBorrowHistoryList(GetBorrowHistoryListRequestModel model)
+        try
         {
+            var result = _service.GetBorrowHistoryListJoin(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetBorrowHistoryListJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("UpdateBorrowHistoryById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult UpdateBorrowHistoryById(UpdateBorrowHistoryByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("DeleteBorrowHistoryById")]
-
-        public IActionResult DeleteBorrowHistoryById(DeleteBorrowHistoryByIdRequestModel model)
+        try
         {
+            var result = _service.UpdateBorrowHistoryById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Succesfully Updated");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.DeleteBorrowHistoryById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok("Successfully Deleted");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("DeleteBorrowHistoryById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult DeleteBorrowHistoryById(DeleteBorrowHistoryByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("UpdateBorrowHistoryById")]
-
-        public IActionResult UpdateBorrowHistoryById(UpdateBorrowHistoryByIdRequestModel model)
+        try
         {
+            var result = _service.DeleteBorrowHistoryById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Successfully Deleted");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.UpdateBorrowHistoryById(model);
-
-                if (result != null)
-                {
-                    return Ok("Succesfully Updated");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
     }
 }

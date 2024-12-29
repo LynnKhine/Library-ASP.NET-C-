@@ -2,209 +2,208 @@
 using LibrarySystem.Models.Category;
 using LibrarySystem.Services;
 
-namespace LibrarySystem.Controllers
+namespace LibrarySystem.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class CategoryController : Controller
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class CategoryController : Controller
+    private readonly CategoryService _service;
+
+    public CategoryController(CategoryService service)
     {
-        private readonly CategoryService _service;
+        _service = service;
+    }
 
-        public CategoryController(CategoryService service)
+    [HttpPost]
+    [Route("CreateCategory")]
+    public IActionResult CreateCategory(CreateCategoryRequestModel model)
+    {
+        if (!ModelState.IsValid)
         {
-            _service = service;
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("CreateCategory")]
-        public IActionResult CreateCategory(CreateCategoryRequestModel model)
+        try
         {
-            if (!ModelState.IsValid)
+            var result = _service.CreateCategory(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.CreateCategory(model);
-
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
-
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
 
-        [HttpGet]
-        [Route("GetCategoryById")]
+    }
 
-        public IActionResult GetCategoryByIdHttpGet(string id)
+    [HttpGet]
+    [Route("GetCategoryById")]
+
+    public IActionResult GetCategoryByIdHttpGet(string id)
+    {
+
+        if (!ModelState.IsValid)
         {
+            return BadRequest(ModelState);
+        }
 
-            if (!ModelState.IsValid)
+        try
+        {
+            var model = new GetCategoryByIdRequestModel { Id = id };
+            var result = _service.GetCategoryById(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var model = new GetCategoryByIdRequestModel { Id = id };
-                var result = _service.GetCategoryById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetCategoryById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetCategoryById(GetCategoryByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetCategoryById")]
-
-        public IActionResult GetCategoryById(GetCategoryByIdRequestModel model)
+        try
         {
+            var result = _service.GetCategoryById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetCategoryById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetCategoryList")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetCategoryList(GetCategoryListRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetCategoryList")]
-
-        public IActionResult GetCategoryList(GetCategoryListRequestModel model)
+        try
         {
+            var result = _service.GetCategoryList(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetCategoryList(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("DeleteCategoryById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult DeleteCategoryById(DeleteCategoryByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("DeleteCategoryById")]
-
-        public IActionResult DeleteCategoryById(DeleteCategoryByIdRequestModel model)
+        try
         {
+            var result = _service.DeleteCategoryById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Successfully Deleted");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.DeleteCategoryById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok("Successfully Deleted");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("UpdateCategoryById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult UpdateCategoryById(UpdateCategoryByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("UpdateCategoryById")]
-
-        public IActionResult UpdateCategoryById(UpdateCategoryByIdRequestModel model)
+        try
         {
+            var result = _service.UpdateCategoryById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Succesfully Updated");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.UpdateCategoryById(model);
-
-                if (result != null)
-                {
-                    return Ok("Succesfully Updated");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
     }
 }

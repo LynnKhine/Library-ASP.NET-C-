@@ -2,209 +2,210 @@
 using LibrarySystem.Models.Staff;
 using LibrarySystem.Services;
 
-namespace LibrarySystem.Controllers
+namespace LibrarySystem.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class StaffController : Controller
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class StaffController : Controller
+    private readonly StaffService _service;
+
+    public StaffController(StaffService service)
     {
-        private readonly StaffService _service;
+        _service = service;
+    }
 
-        public StaffController(StaffService service)
+    [HttpPost]
+    [Route("CreateStaff")]
+    public IActionResult CreateStaff(CreateStaffRequestModel model)
+    {
+        if (!ModelState.IsValid)
         {
-            _service = service;
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("CreateStaff")]
-        public IActionResult CreateStaff(CreateStaffRequestModel model)
+        try
         {
-            if (!ModelState.IsValid)
+            var result = _service.CreateStaff(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.CreateStaff(model);
-
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
-
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
 
-        [HttpGet]
-        [Route("GetStaffById")]
+    }
 
-        public IActionResult GetStaffByIdHttpGet(string id)
+    [HttpGet]
+    [Route("GetStaffById")]
+
+    public IActionResult GetStaffByIdHttpGet(string id)
+    {
+
+        if (!ModelState.IsValid)
         {
+            return BadRequest(ModelState);
+        }
 
-            if (!ModelState.IsValid)
+        try
+        {
+            var model = new GetStaffByIdRequestModel { Id = id };
+            var result = _service.GetStaffByIdJoin(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var model = new GetStaffByIdRequestModel { Id = id };
-                var result = _service.GetStaffByIdJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetStaffById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetStaffById(GetStaffByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetStaffById")]
-
-        public IActionResult GetStaffById(GetStaffByIdRequestModel model)
+        try
         {
+            var result = _service.GetStaffByIdJoin(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetStaffByIdJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetStaffList")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetStaffList(GetStaffListRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetStaffList")]
-
-        public IActionResult GetStaffList(GetStaffListRequestModel model)
+        try
         {
+            var result = _service.GetStaffListJoin(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetStaffListJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("UpdateStaffById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult UpdateStaffById(UpdateStaffByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("DeleteStaffById")]
-
-        public IActionResult DeleteStaffById(DeleteStaffByIdRequestModel model)
+        try
         {
+            var result = _service.UpdateStaffById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Succesfully Updated");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.DeleteStaffById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok("Successfully Deleted");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    [HttpPost]
+    [Route("DeleteStaffById")]
+
+    public IActionResult DeleteStaffById(DeleteStaffByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("UpdateStaffById")]
-
-        public IActionResult UpdateStaffById(UpdateStaffByIdRequestModel model)
+        try
         {
+            var result = _service.DeleteStaffById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Successfully Deleted");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.UpdateStaffById(model);
-
-                if (result != null)
-                {
-                    return Ok("Succesfully Updated");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
     }
 }
+

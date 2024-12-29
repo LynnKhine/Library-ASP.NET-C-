@@ -2,209 +2,208 @@
 using LibrarySystem.Models.Customer;
 using LibrarySystem.Services;
 
-namespace LibrarySystem.Controllers
+namespace LibrarySystem.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class CustomerController : Controller
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class CustomerController : Controller
+    private readonly CustomerService _service;
+
+    public CustomerController(CustomerService service)
     {
-        private readonly CustomerService _service;
+        _service = service;
+    }
 
-        public CustomerController(CustomerService service)
+    [HttpPost]
+    [Route("CreateCustomer")]
+    public IActionResult CreateCustomer(CreateCustomerRequestModel model)
+    {
+        if (!ModelState.IsValid)
         {
-            _service = service;
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("CreateCustomer")]
-        public IActionResult CreateCustomer(CreateCustomerRequestModel model)
+        try
         {
-            if (!ModelState.IsValid)
+            var result = _service.CreateCustomer(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.CreateCustomer(model);
-
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
-
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
 
-        [HttpGet]
-        [Route("GetCustomerById")]
+    }
 
-        public IActionResult GetCustomerByIdHttpGet(string id)
+    [HttpGet]
+    [Route("GetCustomerById")]
+
+    public IActionResult GetCustomerByIdHttpGet(string id)
+    {
+
+        if (!ModelState.IsValid)
         {
+            return BadRequest(ModelState);
+        }
 
-            if (!ModelState.IsValid)
+        try
+        {
+            var model = new GetCustomerByIdRequestModel { Id = id };
+            var result = _service.GetCustomerById(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var model = new GetCustomerByIdRequestModel { Id = id };
-                var result = _service.GetCustomerById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetCustomerById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetCustomerById(GetCustomerByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetCustomerById")]
-
-        public IActionResult GetCustomerById(GetCustomerByIdRequestModel model)
+        try
         {
+            var result = _service.GetCustomerById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetCustomerById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetCustomerList")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetCustomerList(GetCustomerListRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetCustomerList")]
-
-        public IActionResult GetCustomerList(GetCustomerListRequestModel model)
+        try
         {
+            var result = _service.GetCustomerList(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetCustomerList(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("UpdateCustomerById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult UpdateCustomerById(UpdateCustomerByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("DeleteCustomerById")]
-
-        public IActionResult DeleteCustomerById(DeleteCustomerByIdRequestModel model)
+        try
         {
+            var result = _service.UpdateCustomerById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Succesfully Updated");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.DeleteCustomerById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok("Successfully Deleted");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("DeleteCustomerById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult DeleteCustomerById(DeleteCustomerByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("UpdateCustomerById")]
-
-        public IActionResult UpdateCustomerById(UpdateCustomerByIdRequestModel model)
+        try
         {
+            var result = _service.DeleteCustomerById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Successfully Deleted");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.UpdateCustomerById(model);
-
-                if (result != null)
-                {
-                    return Ok("Succesfully Updated");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
     }
 }

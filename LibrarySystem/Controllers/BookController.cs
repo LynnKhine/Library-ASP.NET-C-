@@ -2,209 +2,209 @@
 using LibrarySystem.Models.Book;
 using LibrarySystem.Services;
 
-namespace LibrarySystem.Controllers
+namespace LibrarySystem.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class BookController : Controller
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class BookController : Controller
+    private readonly BookService _service;
+
+    public BookController(BookService service)
     {
-        private readonly BookService _service;
+        _service = service;
+    }
 
-        public BookController(BookService service)
+    [HttpPost]
+    [Route("CreateBook")]
+    public IActionResult CreateBook(CreateBookRequestModel model)
+    {
+        if (!ModelState.IsValid)
         {
-            _service = service;
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("CreateBook")]
-        public IActionResult CreateBook(CreateBookRequestModel model)
+        try
         {
-            if (!ModelState.IsValid)
+            var result = _service.CreateBook(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.CreateBook(model);
-
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
-
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
 
-        [HttpGet]
-        [Route("GetBookById")]
+    }
 
-        public IActionResult GetBookByIdHttpGet(string id)
+    [HttpGet]
+    [Route("GetBookById")]
+
+    public IActionResult GetBookByIdHttpGet(string id)
+    {
+
+        if (!ModelState.IsValid)
         {
+            return BadRequest(ModelState);
+        }
 
-            if (!ModelState.IsValid)
+        try
+        {
+            var model = new GetBookByIdRequestModel { Id = id };
+            var result = _service.GetBookByIdJoin(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var model = new GetBookByIdRequestModel { Id = id };
-                var result = _service.GetBookByIdJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetBookById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetBookById(GetBookByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetBookById")]
-
-        public IActionResult GetBookById(GetBookByIdRequestModel model)
+        try
         {
+            var result = _service.GetBookByIdJoin(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetBookByIdJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("GetBookList")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult GetBookList(GetBookListRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("GetBookList")]
-
-        public IActionResult GetBookList(GetBookListRequestModel model)
+        try
         {
+            var result = _service.GetBookListJoin(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.GetBookListJoin(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("UpdateBookById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult UpdateBookById(UpdateBookByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("UpdateBookById")]
-
-        public IActionResult UpdateBookById(UpdateBookByIdRequestModel model)
+        try
         {
+            var result = _service.UpdateBookById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Succesfully Updated");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.UpdateBookById(model);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
 
-                if (result != null)
-                {
-                    return Ok("Succesfully Updated");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
+    [HttpPost]
+    [Route("DeleteBookById")]
 
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+    public IActionResult DeleteBookById(DeleteBookByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
         }
 
-        [HttpPost]
-        [Route("DeleteBookById")]
-
-        public IActionResult DeleteBookById(DeleteBookByIdRequestModel model)
+        try
         {
+            var result = _service.DeleteBookById(model);
 
-            if (!ModelState.IsValid)
+            if (result != null)
+            {
+                return Ok("Successfully Deleted");
+            }
+            else
             {
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                var result = _service.DeleteBookById(model);
-
-                if (result != null)
-                {
-                    return Ok("Successfully Deleted");
-                }
-                else
-                {
-                    return BadRequest(ModelState);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                var message = ex.Message;
-                return BadRequest(message);
-            }
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
         }
     }
 }
+
