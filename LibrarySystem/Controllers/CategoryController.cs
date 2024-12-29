@@ -144,38 +144,6 @@ public class CategoryController : Controller
     }
 
     [HttpPost]
-    [Route("DeleteCategoryById")]
-
-    public IActionResult DeleteCategoryById(DeleteCategoryByIdRequestModel model)
-    {
-
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
-
-        try
-        {
-            var result = _service.DeleteCategoryById(model);
-
-            if (result != null)
-            {
-                return Ok("Successfully Deleted");
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
-
-        }
-        catch (Exception ex)
-        {
-            var message = ex.Message;
-            return BadRequest(message);
-        }
-    }
-
-    [HttpPost]
     [Route("UpdateCategoryById")]
 
     public IActionResult UpdateCategoryById(UpdateCategoryByIdRequestModel model)
@@ -193,6 +161,38 @@ public class CategoryController : Controller
             if (result != null)
             {
                 return Ok("Succesfully Updated");
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+    }
+
+    [HttpPost]
+    [Route("DeleteCategoryById")]
+
+    public IActionResult DeleteCategoryById(DeleteCategoryByIdRequestModel model)
+    {
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        try
+        {
+            var result = _service.DeleteCategoryById(model);
+
+            if (result != null)
+            {
+                return Ok("Successfully Deleted");
             }
             else
             {

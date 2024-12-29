@@ -41,44 +41,46 @@ namespace LibrarySystem.Services
             return result;
         }
 
-        //Without Join for Get
-        public GetBookByIdResponseModel GetBookById(GetBookByIdRequestModel model)
-        {
-            var book = _context.BookDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
+        ////Without Join for Get
+        //public GetBookByIdResponseModel GetBookById(GetBookByIdRequestModel model)
+        //{
+        //    var book = _context.BookDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            BookModel bookmodel = new BookModel()
-            {
-                Id = book.Id,
-                Name = book.Name,
-                PublishedYear = book.PublishedYear,
-                TotalQuantity = book.TotalQuantity,
-                AvailableQuantity = book.AvailableQuantity
-            };
+        //    BookModel bookmodel = new BookModel()
+        //    {
+        //        Id = book.Id,
+        //        Name = book.Name,
+        //        PublishedYear = book.PublishedYear,
+        //        TotalQuantity = book.TotalQuantity,
+        //        AvailableQuantity = book.AvailableQuantity
+        //    };
 
-            GetBookByIdResponseModel result = new GetBookByIdResponseModel()
-            {
-                BookRes = bookmodel
-            };
+        //    GetBookByIdResponseModel result = new GetBookByIdResponseModel()
+        //    {
+        //        BookRes = bookmodel
+        //    };
 
-            return result;
+        //    return result;
 
-            //return new GetBookByIdResponseModel
-            //{
-            //    Book = result
-            //};
-        }
+        //    //return new GetBookByIdResponseModel
+        //    //{
+        //    //    Book = result
+        //    //};
+        //}
 
-        public GetBookListResponseModel GetBookList(GetBookListRequestModel model)
-        {
-            var result = new GetBookListResponseModel();
-            result.BookList = _context.BookDbSet.AsNoTracking().ToList();
+        //public GetBookListResponseModel GetBookList(GetBookListRequestModel model)
+        //{
+        //    var result = new GetBookListResponseModel();
+        //    result.BookList = _context.BookDbSet.AsNoTracking().ToList();
 
-            return result;
-        }
+        //    return result;
+        //}
+
 
         //With Join for Get
         public GetBookByIdResponseModel GetBookByIdJoin(GetBookByIdRequestModel model)
         {
+
             var bookdetails = _context.BookDbSet
                 .Join(_context.AuthorDbSet,
                         book => book.AuthorId,
@@ -93,7 +95,8 @@ namespace LibrarySystem.Services
                             book_author.author,
                             category
                         })
-                //.Where(book => book.author.Id == model.AuthorId && book.category.Id == model.CategoryId)
+                .Where(book => book.book.Id == model.Id)
+                //.Where(book => book.book.Id == model.Id && book.book.AuthorId !=null && book.book.CategoryId != null)
                 .Select(book => new BookModel
                 {
                     Id = book.book.Id,
@@ -107,10 +110,10 @@ namespace LibrarySystem.Services
                     AvailableQuantity = book.book.AvailableQuantity
                 }).FirstOrDefault();
 
-            //if (bookdetails == null)
-            //{
-            //    throw new KeyNotFoundException($"Book with Id {bookdetails} not found.");
-            //}
+            if (bookdetails == null)
+            {
+               throw new KeyNotFoundException($"Book with Id {bookdetails} not found.");
+            }
 
             GetBookByIdResponseModel result = new GetBookByIdResponseModel()
             {

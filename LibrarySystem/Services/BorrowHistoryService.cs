@@ -25,7 +25,7 @@ namespace LibrarySystem.Services
                 BookId = model.BookId,
                 BorrowDate = DateTime.Now,
                 DueDate = DateTime.Now.AddDays(14),
-                ReturnDate = DateTime.MinValue,
+                ReturnDate = DateTime.Now,
                 CreatedUserId = "1",
                 CreatedDate = DateTime.Now,
             };
