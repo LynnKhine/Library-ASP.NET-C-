@@ -60,7 +60,7 @@ namespace LibrarySystem.Controllers
             try
             {
                 var model = new GetBorrowHistoryByIdRequestModel { Id = id };
-                var result = _service.GetBorrowHistoryById(model);
+                var result = _service.GetBorrowHistoryByIdJoin(model);
 
                 if (result != null)
                 {
@@ -92,7 +92,7 @@ namespace LibrarySystem.Controllers
 
             try
             {
-                var result = _service.GetBorrowHistoryById(model);
+                var result = _service.GetBorrowHistoryByIdJoin(model);
 
                 if (result != null)
                 {
@@ -124,7 +124,7 @@ namespace LibrarySystem.Controllers
 
             try
             {
-                var result = _service.GetBorrowHistoryList(model);
+                var result = _service.GetBorrowHistoryListJoin(model);
 
                 if (result != null)
                 {

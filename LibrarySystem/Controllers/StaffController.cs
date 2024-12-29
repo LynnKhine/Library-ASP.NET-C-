@@ -60,7 +60,7 @@ namespace LibrarySystem.Controllers
             try
             {
                 var model = new GetStaffByIdRequestModel { Id = id };
-                var result = _service.GetStaffById(model);
+                var result = _service.GetStaffByIdJoin(model);
 
                 if (result != null)
                 {
@@ -92,7 +92,7 @@ namespace LibrarySystem.Controllers
 
             try
             {
-                var result = _service.GetStaffById(model);
+                var result = _service.GetStaffByIdJoin(model);
 
                 if (result != null)
                 {
@@ -124,7 +124,7 @@ namespace LibrarySystem.Controllers
 
             try
             {
-                var result = _service.GetStaffList(model);
+                var result = _service.GetStaffListJoin(model);
 
                 if (result != null)
                 {

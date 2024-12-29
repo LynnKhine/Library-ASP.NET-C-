@@ -169,6 +169,8 @@ namespace LibrarySystem.Services
         {
             var book = _context.BookDbSet.Where(a => a.Id == model.Id).FirstOrDefault();
             book.Name = model.Name;
+            book.AuthorId = model.AuthorId;
+            book.CategoryId = model.CategoryId;
             book.PublishedYear = model.PublishedYear;
             book.TotalQuantity = model.TotalQuantity;
             book.AvailableQuantity = model.AvailableQuantity;

@@ -155,6 +155,8 @@ namespace LibrarySystem.Services
         public UpdateBorrowHistoryByIdResponseModel UpdateBorrowHistoryById(UpdateBorrowHistoryByIdRequestModel model)
         {
             var borrowhistory = _context.BorrowHistoryDbSet.Where(a => a.Id == model.Id).FirstOrDefault();
+            borrowhistory.CustomerId = model.CustomerId;
+            borrowhistory.BookId = model.BookId;
             borrowhistory.BorrowDate = model.BorrowDate;
             borrowhistory.DueDate = model.DueDate;
             borrowhistory.ReturnDate = model.ReturnDate;

@@ -134,6 +134,7 @@ namespace LibrarySystem.Services
         {
             var staff = _context.StaffDbSet.Where(a => a.Id == model.Id).FirstOrDefault();
             staff.Name = model.Name;
+            staff.RoleId = model.RoleId;
             staff.Email = model.Email;
             staff.UserName = model.UserName;
             staff.HashedPassword = model.HashedPassword;
