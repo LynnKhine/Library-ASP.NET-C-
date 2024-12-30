@@ -41,33 +41,34 @@ namespace LibrarySystem.Services
         }
 
         //Without Join for Get
-        public GetBorrowHistoryByIdResponseModel GetBorrowHistoryById(GetBorrowHistoryByIdRequestModel model)
-        {
-            var borrowhistory = _context.BorrowHistoryDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
+        //public GetBorrowHistoryByIdResponseModel GetBorrowHistoryById(GetBorrowHistoryByIdRequestModel model)
+        //{
+        //    var borrowhistory = _context.BorrowHistoryDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            BorrowHistoryModel borrowhistorymodel = new BorrowHistoryModel()
-            {
-                Id = borrowhistory.Id,
-                BorrowDate = borrowhistory.BorrowDate,
-                DueDate= borrowhistory.DueDate,
-                ReturnDate = borrowhistory.ReturnDate
-            };
+        //    BorrowHistoryModel borrowhistorymodel = new BorrowHistoryModel()
+        //    {
+        //        Id = borrowhistory.Id,
+        //        BorrowDate = borrowhistory.BorrowDate,
+        //        DueDate= borrowhistory.DueDate,
+        //        ReturnDate = borrowhistory.ReturnDate
+        //    };
 
-            GetBorrowHistoryByIdResponseModel result = new GetBorrowHistoryByIdResponseModel()
-            {
-                BorrowHistoryRes = borrowhistorymodel
-            };
+        //    GetBorrowHistoryByIdResponseModel result = new GetBorrowHistoryByIdResponseModel()
+        //    {
+        //        BorrowHistoryRes = borrowhistorymodel
+        //    };
 
-            return result;
-        }
+        //    return result;
+        //}
 
-        public GetBorrowHistoryListResponseModel GetBorrowHistoryList(GetBorrowHistoryListRequestModel model)
-        {
-            var result = new GetBorrowHistoryListResponseModel();
-            result.BorrowHistoryList = _context.BorrowHistoryDbSet.AsNoTracking().ToList();
+        //public GetBorrowHistoryListResponseModel GetBorrowHistoryList(GetBorrowHistoryListRequestModel model)
+        //{
+        //    var result = new GetBorrowHistoryListResponseModel();
+        //    result.BorrowHistoryList = _context.BorrowHistoryDbSet.AsNoTracking().ToList();
 
-            return result;
-        }
+        //    return result;
+        //}
+
 
         //With Join for Get
         public GetBorrowHistoryByIdResponseModel GetBorrowHistoryByIdJoin(GetBorrowHistoryByIdRequestModel model)
@@ -86,6 +87,7 @@ namespace LibrarySystem.Services
                             borrowhistory_customer.customer,
                             book
                         })
+                .Where(borrowhistory => borrowhistory.borrowhistory.Id == model.Id)
                 .Select(borrowhistory => new BorrowHistoryModel
                 {
                     Id = borrowhistory.borrowhistory.Id,

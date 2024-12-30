@@ -40,35 +40,35 @@ namespace LibrarySystem.Services
         }
 
         //Without Join for Get
-        public GetStaffByIdResponseModel GetStaffById(GetStaffByIdRequestModel model)
-        {
-            var staff = _context.StaffDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
+        //public GetStaffByIdResponseModel GetStaffById(GetStaffByIdRequestModel model)
+        //{
+        //    var staff = _context.StaffDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            StaffModel staffmodel = new StaffModel()
-            {
-                Id = staff.Id,
-                Name = staff.Name,
-                Email = staff.Email,
-                UserName = staff.UserName,
-                HashedPassword = staff.HashedPassword
-            };
+        //    StaffModel staffmodel = new StaffModel()
+        //    {
+        //        Id = staff.Id,
+        //        Name = staff.Name,
+        //        Email = staff.Email,
+        //        UserName = staff.UserName,
+        //        HashedPassword = staff.HashedPassword
+        //    };
 
 
-            GetStaffByIdResponseModel result = new GetStaffByIdResponseModel()
-            {
-                StaffRes = staffmodel
-            };
+        //    GetStaffByIdResponseModel result = new GetStaffByIdResponseModel()
+        //    {
+        //        StaffRes = staffmodel
+        //    };
 
-            return result;
-        }
+        //    return result;
+        //}
 
-        public GetStaffListResponseModel GetStaffList(GetStaffListRequestModel model)
-        {
-            var result = new GetStaffListResponseModel(); // might not work no where condition for role name
-            result.StaffList = _context.StaffDbSet.AsNoTracking().ToList();
+        //public GetStaffListResponseModel GetStaffList(GetStaffListRequestModel model)
+        //{
+        //    var result = new GetStaffListResponseModel(); // might not work no where condition for role name
+        //    result.StaffList = _context.StaffDbSet.AsNoTracking().ToList();
 
-            return result;
-        }
+        //    return result;
+        //}
 
 
         //With Join for Get
