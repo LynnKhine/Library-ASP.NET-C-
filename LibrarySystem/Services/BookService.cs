@@ -96,6 +96,7 @@ namespace LibrarySystem.Services
                             category
                         })
                 .Where(book => book.book.Id == model.Id)
+                .AsNoTracking()
                 //.Where(book => book.book.Id == model.Id && book.book.AuthorId !=null && book.book.CategoryId != null)
                 .Select(book => new BookModel
                 {
@@ -139,8 +140,8 @@ namespace LibrarySystem.Services
                             book_author.author,
                             category
                         })
-                .Where(book => book.author.Name == model.AuthorName && book.category.Name == model.CategoryName)
-                .AsNoTracking()
+                //.Where(book => book.author.Name == model.AuthorName && book.category.Name == model.CategoryName)
+                //.AsNoTracking()
                 .Select(book => new BookModel
                 {
                     Id = book.book.Id,
@@ -154,15 +155,15 @@ namespace LibrarySystem.Services
                     AvailableQuantity = book.book.AvailableQuantity
                 }).ToList();
 
-            var author = _context.AuthorDbSet.Where(a => a.Name == model.AuthorName)
-                .AsNoTracking().FirstOrDefault();
-            var category = _context.CategoryDbSet.Where(c => c.Name == model.CategoryName)
-                .AsNoTracking().FirstOrDefault();
+            //var author = _context.AuthorDbSet.Where(a => a.Name == model.AuthorName)
+            //    .AsNoTracking().FirstOrDefault();
+            //var category = _context.CategoryDbSet.Where(c => c.Name == model.CategoryName)
+            //    .AsNoTracking().FirstOrDefault();
 
             GetBookListResponseModelJoin result = new GetBookListResponseModelJoin()
             {
-                AuthorName = author.Name,               // ? there will be duplicate cause already declared in select lets see
-                CategoryName = category.Name,
+                //AuthorName = author.Name,               // ? there will be duplicate cause already declared in select lets see
+                //CategoryName = category.Name,
                 BookList = booklist
             };
 

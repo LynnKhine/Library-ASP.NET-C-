@@ -88,6 +88,7 @@ namespace LibrarySystem.Services
                             book
                         })
                 .Where(borrowhistory => borrowhistory.borrowhistory.Id == model.Id)
+                .AsNoTracking()
                 .Select(borrowhistory => new BorrowHistoryModel
                 {
                     Id = borrowhistory.borrowhistory.Id,
@@ -124,9 +125,9 @@ namespace LibrarySystem.Services
                         borrowhistory_customer.customer,
                         book
                     })
-                .Where(borrowhistory => borrowhistory.customer.Name == model.CustomerName && 
-                                        borrowhistory.book.Name == model.BookName)
-                .AsNoTracking()
+                //.Where(borrowhistory => borrowhistory.customer.Name == model.CustomerName && 
+                //                        borrowhistory.book.Name == model.BookName)
+                //.AsNoTracking()
                 .Select(borrowhistory => new BorrowHistoryModel
                 {
                     Id = borrowhistory.borrowhistory.Id,
@@ -139,15 +140,15 @@ namespace LibrarySystem.Services
                     ReturnDate = borrowhistory.borrowhistory.ReturnDate
                 }).ToList();
 
-            var customer = _context.CustomerDbSet.Where(c => c.Name == model.CustomerName)
-                .AsNoTracking().FirstOrDefault();
-            var book = _context.BookDbSet.Where(b => b.Name == model.BookName) 
-                .AsNoTracking().FirstOrDefault();
+            //var customer = _context.CustomerDbSet.Where(c => c.Name == model.CustomerName)
+            //    .AsNoTracking().FirstOrDefault();
+            //var book = _context.BookDbSet.Where(b => b.Name == model.BookName) 
+            //    .AsNoTracking().FirstOrDefault();
 
             GetBorrowHistoryListResponseModelJoin result = new GetBorrowHistoryListResponseModelJoin()
             {
-                CustomerName = customer.Name,
-                BookName = book.Name,
+                //CustomerName = customer.Name,
+                //BookName = book.Name,
                 BorrowHistoryList = borrowhistorylist
             };
 

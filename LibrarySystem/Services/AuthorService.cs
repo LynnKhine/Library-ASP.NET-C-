@@ -37,11 +37,11 @@ namespace LibrarySystem.Services
             return result;
         }
 
-        public GetAuthorResponseModel GetAuthorById(GetAuthorByIdRequestModel model)
+        public GetAuthorByIdResponseModel GetAuthorById(GetAuthorByIdRequestModel model)
         {
             var author = _context.AuthorDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            GetAuthorResponseModel result = new GetAuthorResponseModel()
+            AuthorModel authormodel = new AuthorModel()
             {
                 Id = author.Id,
                 Name = author.Name,
@@ -49,6 +49,10 @@ namespace LibrarySystem.Services
                 Bio = author.Bio
             };
 
+            GetAuthorByIdResponseModel result = new GetAuthorByIdResponseModel()
+            {
+                AuthorRes = authormodel
+            };
 
             return result;
         }

@@ -36,17 +36,21 @@ namespace LibrarySystem.Services
             return result;
         }
 
-        public GetRoleResponseModel GetRoleById(GetRoleByIdRequestModel model)
+        public GetRoleByIdResponseModel GetRoleById(GetRoleByIdRequestModel model)
         {
             var role = _context.RoleDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            GetRoleResponseModel result = new GetRoleResponseModel()
+            RoleModel roleModel = new RoleModel()
             {
                 Id = role.Id,
                 Name = role.Name,
-                Description= role.Description
+                Description = role.Description
             };
 
+            GetRoleByIdResponseModel result = new GetRoleByIdResponseModel()
+            {
+                RoleRes = roleModel
+            };
 
             return result;
         }

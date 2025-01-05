@@ -106,8 +106,8 @@ namespace LibrarySystem.Services
                         staff => staff.RoleId,
                         role => role.Id,
                         (staff, role) => new { staff, role })
-                .Where(staff => staff.role.Name == model.RoleName)
-                .AsNoTracking()
+                //.Where(staff => staff.role.Name == model.RoleName)
+                //.AsNoTracking()
                 .Select(staff => new StaffModel
                 {
                     Id = staff.staff.Id,
@@ -119,12 +119,12 @@ namespace LibrarySystem.Services
                     HashedPassword = staff.staff.HashedPassword
                 }).ToList();
 
-            var role = _context.RoleDbSet.Where(r => r.Name == model.RoleName)
-                .AsNoTracking().FirstOrDefault();
+            //var role = _context.RoleDbSet.Where(r => r.Name == model.RoleName)
+            //    .AsNoTracking().FirstOrDefault();
 
             GetStaffListResponseModelJoin result = new GetStaffListResponseModelJoin()
             {
-                RoleName = role.Name,
+                //RoleName = role.Name,
                 StaffList = stafflist
             };
 

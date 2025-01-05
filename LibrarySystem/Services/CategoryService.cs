@@ -36,15 +36,20 @@ namespace LibrarySystem.Services
             return result;
         }
 
-        public GetCategoryResponseModel GetCategoryById(GetCategoryByIdRequestModel model)
+        public GetCategoryByIdResponseModel GetCategoryById(GetCategoryByIdRequestModel model)
         {
             var category = _context.CategoryDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            GetCategoryResponseModel result = new GetCategoryResponseModel()
+            CategoryModel categoryModel = new CategoryModel()
             {
                 Id = category.Id,
                 Name = category.Name,
-                Description= category.Description
+                Description = category.Description
+            };
+
+            GetCategoryByIdResponseModel result = new GetCategoryByIdResponseModel()
+            {
+               CategoryRes = categoryModel
             };
 
 

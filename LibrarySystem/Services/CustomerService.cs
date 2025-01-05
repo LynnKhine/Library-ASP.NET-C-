@@ -43,16 +43,20 @@ namespace LibrarySystem.Services
         {
             var customer = _context.CustomerDbSet.Where(a => a.Id == model.Id).AsNoTracking().FirstOrDefault();
 
-            GetCustomerResponseModel result = new GetCustomerResponseModel()
+            CustomerModel customermodel = new CustomerModel()
             {
                 Id = customer.Id,
                 Name = customer.Name,
-                PhoneNumber= customer.PhoneNumber,
+                PhoneNumber = customer.PhoneNumber,
                 Email = customer.Email,
                 Address = customer.Address,
-                IsBorrowed= customer.IsBorrowed
+                IsBorrowed = customer.IsBorrowed
             };
 
+            GetCustomerResponseModel result = new GetCustomerResponseModel()
+            {
+                CustomerRes = customermodel
+            };
 
             return result;
         }
@@ -75,7 +79,6 @@ namespace LibrarySystem.Services
             customer.IsBorrowed = model.IsBorrowed;
             customer.UpdatedUserId = "2";
             customer.UpdatedDate = DateTime.Now;
-
 
             _context.CustomerDbSet.Update(customer);
             _context.SaveChanges();
