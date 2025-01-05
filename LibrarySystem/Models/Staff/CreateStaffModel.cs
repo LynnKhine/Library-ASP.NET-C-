@@ -20,6 +20,8 @@
 
     public class CreateStaffResponseModel
     {
-        public string StaffId { get; set; }
+        public StaffModel StaffRes { get; set; }
+
+        //public string StaffId { get; set; }
     }
 }

@@ -14,6 +14,8 @@
 
     public class CreateRoleResponseModel
     {
-        public string RoleId { get; set; }
+        public RoleModel RoleRes { get; set; }
+
+        //public string RoleId { get; set; }
     }
 }

@@ -28,9 +28,18 @@ namespace LibrarySystem.Services
             _context.RoleDbSet.Add(role);
             _context.SaveChanges();
 
+            RoleModel roleModel = new RoleModel()
+            {
+                Id = role.Id,
+                Name = model.Name,
+                Description = model.Description
+            };
+
             CreateRoleResponseModel result = new CreateRoleResponseModel()
             {
-                RoleId = role.Id
+                RoleRes = roleModel
+
+                //RoleId = role.Id
             };
 
             return result;

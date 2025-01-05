@@ -32,9 +32,22 @@ namespace LibrarySystem.Services
             _context.BorrowHistoryDbSet.Add(borrowhistory);
             _context.SaveChanges();
 
+            BorrowHistoryModel borrowHistoryModel = new BorrowHistoryModel()
+            {
+                Id = borrowhistory.Id,
+                CustomerId = borrowhistory.CustomerId,
+                BookId = borrowhistory.BookId,
+                BorrowDate = borrowhistory.BorrowDate,
+                DueDate = borrowhistory.DueDate,
+                ReturnDate = borrowhistory.ReturnDate
+            };
+
+
             CreateBorrowHistoryResponseModel result = new CreateBorrowHistoryResponseModel()
             {
-                BorrowHistoryId = borrowhistory.Id
+                BorrowHistoryRes = borrowHistoryModel
+
+                //BorrowHistoryId = borrowhistory.Id
             };
 
             return result;

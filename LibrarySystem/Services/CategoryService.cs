@@ -28,9 +28,19 @@ namespace LibrarySystem.Services
             _context.CategoryDbSet.Add(category);
             _context.SaveChanges();
 
+            CategoryModel categoryModel = new CategoryModel()
+            {
+                Id = category.Id,
+                Name = model.Name,
+                Description = model.Description
+            };
+
+
             CreateCategoryResponseModel result = new CreateCategoryResponseModel()
             {
-                CategoryId = category.Id
+                CategoryRes = categoryModel
+
+                //CategoryId = category.Id
             };
 
             return result;

@@ -33,9 +33,22 @@ namespace LibrarySystem.Services
             _context.BookDbSet.Add(book);
             _context.SaveChanges();
 
+            BookModel bookModel = new BookModel()
+            {
+                Id = book.Id,
+                Name = model.Name,
+                AuthorId = model.AuthorId,
+                CategoryId = model.CategoryId,
+                PublishedYear = model.PublishedYear,
+                TotalQuantity = model.TotalQuantity,
+                AvailableQuantity = model.AvailableQuantity
+            };
+
             CreateBookResponseModel result = new CreateBookResponseModel()
             {
-                BookId = book.Id
+                BookRes = bookModel
+
+                //BookId = book.Id
             };
 
             return result;

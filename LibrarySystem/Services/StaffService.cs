@@ -31,9 +31,21 @@ namespace LibrarySystem.Services
             _context.StaffDbSet.Add(staff);
             _context.SaveChanges();
 
+            StaffModel staffModel = new StaffModel()
+            {
+                Id = staff.Id,
+                Name = model.Name,
+                RoleId = model.RoleId,
+                Email = model.Email,
+                UserName = model.UserName,
+                HashedPassword = model.HashedPassword,
+            };
+
             CreateStaffResponseModel result = new CreateStaffResponseModel()
             {
-                StaffId = staff.Id
+                StaffRes = staffModel
+
+                //StaffId = staff.Id
             };
 
             return result;

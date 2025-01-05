@@ -18,6 +18,7 @@
     public class CreateAuthorResponseModel
     {
         public AuthorModel AuthorRes { get; set; }
-        public string AuthorId { get; set; }
+
+        //public string AuthorId { get; set; }
     }
 }

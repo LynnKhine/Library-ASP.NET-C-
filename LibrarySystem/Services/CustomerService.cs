@@ -31,9 +31,21 @@ namespace LibrarySystem.Services
             _context.CustomerDbSet.Add(customer);
             _context.SaveChanges();
 
+            CustomerModel customerModel = new CustomerModel()
+            {
+                Id = customer.Id,
+                Name = model.Name,
+                PhoneNumber = model.PhoneNumber,
+                Email = model.Email,
+                Address = model.Address,
+                IsBorrowed = model.IsBorrowed
+            };
+
             CreateCustomerResponseModel result = new CreateCustomerResponseModel()
             {
-                CustomerId = customer.Id
+                CustomerRes = customerModel
+
+                //CustomerId = customer.Id
             };
 
             return result;

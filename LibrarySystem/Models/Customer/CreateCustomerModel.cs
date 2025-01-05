@@ -20,6 +20,8 @@
 
     public class CreateCustomerResponseModel
     {
-        public string CustomerId { get; set; }
+        public CustomerModel CustomerRes { get; set; }
+
+        //public string CustomerId { get; set; }
     }
 }

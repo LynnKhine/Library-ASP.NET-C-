@@ -29,9 +29,18 @@ namespace LibrarySystem.Services
             _context.AuthorDbSet.Add(author);
             _context.SaveChanges();
 
+            AuthorModel authorModel = new AuthorModel()
+            {
+                Id = author.Id,
+                Name = model.Name, 
+                //Name = author.Name, performance is identical with model.Name
+                RealName = model.RealName,
+                Bio = model.Bio,
+            };
             CreateAuthorResponseModel result = new CreateAuthorResponseModel()
             {
-                AuthorId = author.Id
+                //AuthorId = author.Id
+                AuthorRes = authorModel
             };
 
             return result;

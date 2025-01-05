@@ -15,6 +15,8 @@
 
     public class CreateBorrowHistoryResponseModel
     {
-        public string BorrowHistoryId { get; set; }
+        public BorrowHistoryModel BorrowHistoryRes { get; set; }
+
+        //public string BorrowHistoryId { get; set; }
     }
 }
