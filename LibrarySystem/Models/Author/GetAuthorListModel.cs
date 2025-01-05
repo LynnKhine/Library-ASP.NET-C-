@@ -3,11 +3,6 @@ using System.Diagnostics.Contracts;
 
 namespace LibrarySystem.Models.Author
 {
-    public class GetAuthorListModel
-    {
-
-    }
-
     public class GetAuthorListRequestModel
     {
 

@@ -2,11 +2,6 @@
 
 namespace LibrarySystem.Models.Category
 {
-    public class GetCategoryListModel
-    {
-
-    }
-
     public class GetCategoryListRequestModel
     {
 

@@ -1,6 +1,6 @@
 ﻿namespace LibrarySystem.Models.Customer
 {
-    public class UpdateCustomerByIdRequestModel
+    public class CustomerModel
     {
         public string Id { get; set; }
 
@@ -13,10 +13,5 @@
         public string Address { get; set; }
 
         public bool IsBorrowed { get; set; }
-    }
-
-    public class UpdateCustomerByIdResponseModel
-    {
-
     }
 }

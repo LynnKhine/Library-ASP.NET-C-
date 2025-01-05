@@ -1,9 +1,5 @@
 ﻿namespace LibrarySystem.Models.Staff
 {
-    public class UpdateStaffByIdModel
-    {
-
-    }
     public class UpdateStaffByIdRequestModel
     {
         public string Id { get; set; }

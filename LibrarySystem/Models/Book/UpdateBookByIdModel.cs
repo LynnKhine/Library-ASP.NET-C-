@@ -1,9 +1,5 @@
 ﻿namespace LibrarySystem.Models.Book
 {
-    public class UpdateBookByIdModel
-    {
-
-    }
     public class UpdateBookByIdRequestModel
     {
         public string Id { get; set; }

@@ -2,11 +2,6 @@
 
 namespace LibrarySystem.Models.Role
 {
-    public class GetRoleListModel
-    {
-
-    }
-
     public class GetRoleListRequestModel
     {
 

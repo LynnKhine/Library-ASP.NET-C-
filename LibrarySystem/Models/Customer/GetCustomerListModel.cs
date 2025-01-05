@@ -2,11 +2,6 @@
 
 namespace LibrarySystem.Models.Customer
 {
-    public class GetCustomerListModel
-    {
-
-    }
-
     public class GetCustomerListRequestModel
     {
 
