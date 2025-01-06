@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using LibrarySystem.Data;
 using LibrarySystem.Controllers;
 using LibrarySystem.Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,15 @@ builder.Services.AddTransient<CustomerService>();
 builder.Services.AddTransient<RoleService>();
 builder.Services.AddTransient<StaffService>();
 
+//hard coding logging to console, just for testing purposes
+//builder.Host.UseSerilog((context, configuration) =>
+//        configuration
+//            .WriteTo.Console()
+//            .MinimumLevel.Information());
+
+builder.Host.UseSerilog((context, configuration) =>
+        configuration.ReadFrom.Configuration(context.Configuration));
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -32,6 +42,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseSerilogRequestLogging();         //to log http request
 
 app.UseHttpsRedirection();
 

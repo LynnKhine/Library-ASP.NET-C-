@@ -66,6 +66,26 @@ namespace LibrarySystem.Services
             return result;
         }
 
+        public GetAuthorByNameResponseModel GetAuthorByName(GetAuthorByNameRequestModel model)
+        {
+            var author = _context.AuthorDbSet.Where(a => a.Name == model.PenName).AsNoTracking().FirstOrDefault();
+
+            AuthorModel authormodel = new AuthorModel()
+            {
+                Id = author.Id,
+                Name = author.Name,
+                RealName = author.RealName,
+                Bio = author.Bio
+            };
+
+            GetAuthorByNameResponseModel result = new GetAuthorByNameResponseModel()
+            {
+                AuthorRes = authormodel
+            };
+
+            return result;
+        }
+
         public GetAuthorListResponseModel GetAuthorList(GetAuthorListRequestModel model)
         {
             var result = new GetAuthorListResponseModel();

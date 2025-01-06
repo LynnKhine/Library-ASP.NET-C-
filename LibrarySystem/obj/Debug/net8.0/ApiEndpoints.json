@@ -65,6 +65,22 @@
   },
   {
     "ContainingType": "LibrarySystem.Controllers.AuthorController",
+    "Method": "GetAuthorByName",
+    "RelativePath": "api/Author/GetAuthorByName",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "LibrarySystem.Models.Author.GetAuthorByNameRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibrarySystem.Controllers.AuthorController",
     "Method": "GetAuthorList",
     "RelativePath": "api/Author/GetAuthorList",
     "HttpMethod": "POST",

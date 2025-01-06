@@ -9,10 +9,12 @@ namespace LibrarySystem.Controllers;
 public class AuthorController : Controller
 {
     private readonly AuthorService _service;
+    private readonly ILogger<AuthorController> _logger;
 
-    public AuthorController(AuthorService service)
+    public AuthorController(AuthorService service, ILogger<AuthorController> logger)
     {
         _service = service;
+        _logger = logger;
     }
 
     [HttpPost]
@@ -111,6 +113,43 @@ public class AuthorController : Controller
         }
     }
 
+    [HttpPost]
+    [Route("GetAuthorByName")]
+
+    public IActionResult GetAuthorByName(GetAuthorByNameRequestModel model)
+    {
+        _logger.LogInformation("GetAuthorByName executing ... ");
+
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        try
+        {
+            var result = _service.GetAuthorByName(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+            return BadRequest(message);
+        }
+        finally
+        {
+            _logger.LogInformation("GetAuthorByName Finished ...");
+        }
+    }
     [HttpPost]
     [Route("GetAuthorList")]
 
