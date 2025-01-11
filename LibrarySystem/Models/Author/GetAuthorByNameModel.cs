@@ -9,4 +9,9 @@
     {
         public AuthorModel AuthorRes { get; set; }
     }
+
+    public class GetAuthorByNameModel // delete later
+    {
+
+    }
 }
