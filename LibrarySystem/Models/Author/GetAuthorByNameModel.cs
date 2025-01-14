@@ -10,18 +10,10 @@
         public AuthorModel AuthorRes { get; set; }
     }
 
-    public class GetAuthorByNameModel // delete later
+    public class DeleteLater
     {
 
     }
 
-    public class GetAuthorByModel // delete later
-    {
 
-    }
-
-    public class GetAuthorByGGModel
-    {
-
-    }
 }
