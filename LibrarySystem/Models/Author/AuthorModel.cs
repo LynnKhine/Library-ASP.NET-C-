@@ -10,4 +10,9 @@
 
         public string Bio { get; set; }
     }
+
+    public class DeleteLaterModel
+    {
+
+    }
 }
